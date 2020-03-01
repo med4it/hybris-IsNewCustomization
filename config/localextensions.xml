@@ -8,10 +8,6 @@
     <extension name='commerceservicesbackoffice' />
     <extension name='solrfacetsearchbackoffice' />
     <extension name='solrserver' />
-    <extension name='yacceleratorbackoffice' />
-    <extension name='yacceleratorinitialdata' />
-    <extension name='yacceleratorfulfilmentprocess' />
-    <extension name='yacceleratorstorefront' />
     <extension name='ycommercewebservices' />
     <extension name='ycommercewebservicestest' />
     <extension name='electronicsstore' />
@@ -95,5 +91,15 @@
     <extension name='merchandisingservices' />
     <extension name='merchandisingservicesbackoffice' />
     <extension name='merchandisingstorefrontsampledataaddon' />
+
+    <!--Adding generated custom accelerator extensions-->
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStorefulfilmentprocess"/>
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStorecore"/>
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStorefacades"/>
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStoretest"/>
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStoreinitialdata"/>
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStorebackoffice"/>
+    <extension dir="C:\hybris\hybris\bin/custom/customStore/customStorestorefront"/>
+
   </extensions>
 </hybrisconfig>
