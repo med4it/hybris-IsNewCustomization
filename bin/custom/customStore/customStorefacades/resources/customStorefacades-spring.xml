@@ -28,7 +28,7 @@
 		<property name="productConverter" ref="carouselProductConverter"/>
 		<property name="cartService" ref="cartService"/>
 	</bean>
-	
+
 	<bean id="carouselProductConverter" parent="defaultProductConverter">
 		<property name="populators">
 			<list merge="true">
@@ -85,6 +85,14 @@
 	<bean parent="modifyPopulatorList">
 		<property name="list" ref="productConverter"/>
 		<property name="add" ref="apparelProductPopulator"/>
+	</bean>
+
+	<bean id="classifiedProductPopulator" class="ma.ensias.facades.populators.ClassifiedProductPopulator" />
+
+	<!-- Add the classifiedProductPopulator to the productConverter -->
+	<bean parent="modifyPopulatorList">
+		<property name="list" ref="productConverter"/>
+		<property name="add" ref="classifiedProductPopulator"/>
 	</bean>
 
 	<!-- accelerator Image Format Mappings -->
