@@ -28,11 +28,14 @@
 		<property name="productConverter" ref="carouselProductConverter"/>
 		<property name="cartService" ref="cartService"/>
 	</bean>
+
+	<bean id="classifiedProductPopulator" class="ma.ensias.facades.populators.ClassifiedProductPopulator" />
 	
 	<bean id="carouselProductConverter" parent="defaultProductConverter">
 		<property name="populators">
 			<list merge="true">
 				<ref bean="productPricePopulator"/>
+				<ref bean="classifiedProductPopulator" />
 			</list>
 		</property>
 	</bean>
