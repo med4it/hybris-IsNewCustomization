@@ -109,6 +109,17 @@
                     </attribute>
                 </attributes>
             </itemtype>
+
+            <itemtype code="Product" autocreate="false" generate="false">
+                <attributes>
+                    <attribute qualifier="creationDate" type="java.util.Date">
+                        <description>The product creation date on the store</description>
+                        <modifiers initial="true" read="true" write="true"/>
+                        <persistence type="property" />
+                        <defaultvalue>new Date()</defaultvalue>
+                    </attribute>
+                </attributes>
+            </itemtype>
         </typegroup>
 
     </itemtypes>
